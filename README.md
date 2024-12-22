@@ -1,3 +1,4 @@
+![127 0 0 1_5500_index html (2)](https://github.com/user-attachments/assets/237e87a0-5a48-46d7-8e52-f0ff7fcf4b30)
 # CleanMyArea
 
 **Welcome to CleanMyArea**, a revolutionary platform that transforms waste management into a seamless and rewarding experience! 🌍✨
