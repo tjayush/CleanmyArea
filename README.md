@@ -88,7 +88,7 @@ Contributions are welcome! If you have ideas to improve the platform or add new 
 
 ## Demo Video
 
-Check out the demo and walkthrough of the platform on YouTube: [CleanMyArea Demo]([https://youtube.com/your-youtube-link](https://youtu.be/zLcouSxoXrE?si=Nfo9HI6-RaKlWUIJ))
+Check out the demo and walkthrough of the platform on YouTube: [CleanMyArea Demo] https://youtube.com/your-youtube-link](https://youtu.be/zLcouSxoXrE?si=Nfo9HI6-RaKlWUIJ
 
 ## License
 
