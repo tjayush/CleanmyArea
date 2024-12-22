@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Dustbin - Recyclable Waste</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e3f2fd;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2196F3;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        h1,
+        h2 {
+            color: #2196F3;
+            text-align: center;
+        }
+
+        /* Description Section */
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .description img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Item List */
+        .item-list {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .item-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196F3;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Form Section */
+        form {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2196F3;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #2196F3;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1976D2;
+        }
+
+        .note {
+            margin-top: 20px;
+            background-color: #d0f0c0;
+            color: #4caf50;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+        }
+
+        .note img {
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .note p {
+            display: inline-block;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="purchase.html">Purchase</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Description Section -->
+        <div class="description">
+            <img src="pics/blue.jpeg" alt="Blue Dustbin">
+            <h1>Blue Dustbin</h1>
+            <p>Recyclable waste includes materials that can be processed and reused, rather than being disposed of as garbage. The blue dustbin is specifically designed for these materials, helping to conserve resources and reduce environmental impact.</p>
+
+            <h2>How to Use the Blue Dustbin</h2>
+            <p>Place only recyclable items in the blue dustbin. These are materials that can be reprocessed into new products. Avoid placing non-recyclable or hazardous items in this bin to ensure proper recycling and avoid contamination.</p>
+        </div>
+
+        <!-- Item List Section -->
+        <div class="item-list">
+            <h2>Items Accepted in the Blue Dustbin</h2>
+            <ul>
+                <li>Plastic Bottles</li>
+                <li>Glass Bottles and Jars</li>
+                <li>Aluminum Cans</li>
+                <li>Paper (Newspapers, Magazines)</li>
+                <li>Cardboard (Cereal Boxes, Shipping Boxes)</li>
+                <li>Metals (Food Cans, Tin Cans,Irons)</li>
+                <li>Empty Aerosol Cans</li>
+            </ul>
+        </div>
+
+        <!-- Form Section -->
+        <h2>Sell Your Recyclable Waste</h2>
+        <form id="recyclableForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="ward">Ward Number:</label>
+            <input type="number" id="ward" name="ward" required>
+
+            <label for="pin">Pin Code:</label>
+            <input type="text" id="pin" name="pin" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="Plastic Bottles">Plastic Bottles</option>
+                <option value="Glass Bottles and Jars">Glass Bottles and Jars</option>
+                <option value="Aluminum">Aluminum </option>
+                <option value="Paper">Paper (Newspapers, Magazines)</option>
+                <option value="Cardboard">Cardboard (Cereal Boxes, Shipping Boxes)</option>
+                <option value="Metals">Metals (Food Cans, Tin Cans, Irons)</option>
+                <option value="Empty Aerosol Cans">Empty Aerosol Cans</option>
+            </select>
+
+            <label for="aboutItem">About Item (Make, Weight):</label>
+            <textarea id="aboutItem" name="aboutItem" rows="3" required></textarea>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="note">
+            <img src="pics/blue.jpeg" alt="Check">
+            <p>We have received your product details. After collecting, you will receive your money.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Clean My Area. All rights reserved.</p>
+    </div>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById('recyclableForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.querySelector('.note').style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Dustbin - Biodegradable Waste</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e7f5e9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        h1,
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        /* Description Section */
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .description img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Item List */
+        .item-list {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .item-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            background-color: #e7f5e9;
+            border-left: 5px solid #4CAF50;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Form Section */
+        form {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .note {
+            margin-top: 20px;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+        }
+
+        .note img {
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .note p {
+            display: inline-block;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="purchase.html">Purchase</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Description Section -->
+        <div class="description">
+            <img src="pics/green.jpg" alt="Green Dustbin">
+            <h1>Green Dustbin</h1>
+            <p>Biodegradable waste refers to waste that can be decomposed by bacteria or other natural organisms and not harm the environment. The green dustbin is designed specifically for such waste, ensuring it is disposed of in an eco-friendly manner.</p>
+
+            <h2>How to Use the Green Dustbin</h2>
+            <p>Only place biodegradable waste in the green dustbin. This includes organic materials that can decompose naturally. Avoid placing non-biodegradable items in this bin, as they cannot be processed in the same way and may harm the environment.</p>
+        </div>
+
+        <!-- Item List Section -->
+        <div class="item-list">
+            <h2>Items Accepted in the Green Dustbin</h2>
+            <ul>
+                <li>Vegetable & Fruit Peels</li>
+                <li>Food Scraps</li>
+                <li>Garden Waste (Leaves, Grass Clippings)</li>
+                <li>Paper & Cardboard</li>
+                <li>Wood</li>
+                <li>Eggshells</li>
+                <li>Coffee Grounds & Tea Bags</li>
+            </ul>
+        </div>
+
+        <!-- Form Section -->
+        <h2>Sell Your Biodegradable Waste</h2>
+        <form id="biodegradableForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="ward">Ward Number:</label>
+            <input type="number" id="ward" name="ward" required>
+
+            <label for="pin">Pin Code:</label>
+            <input type="text" id="pin" name="pin" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="Vegetable & Fruit Peels">Vegetable & Fruit Peels</option>
+                <option value="Food Scraps">Food Scraps</option>
+                <option value="Garden Waste">Garden Waste (Leaves, Grass Clippings)</option>
+                <option value="Paper & Cardboard">Paper & Cardboard</option>
+                <option value="Wood">Wood</option>
+                <option value="Eggshells">Eggshells</option>
+                <option value="Coffee Grounds & Tea Bags">Coffee Grounds & Tea Bags</option>
+            </select>
+
+            <label for="aboutItem">About Item (Make, Weight):</label>
+            <textarea id="aboutItem" name="aboutItem" rows="3" required></textarea>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="note">
+            <img src="pics/green.jpg" alt="Check">
+            <p>We have received your product details. After collecting, you will receive your money.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Clean My Area. All rights reserved.</p>
+    </div>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById('biodegradableForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.querySelector('.note').style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure you link your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd; /* Light Blue Background */
+            color: #333;
+        }
+
+        header {
+            background-color: #0288d1; /* Bright Blue Header */
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #0288d1; /* Bright Blue for Headings */
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            font-size: 20px;
+            color: #039be5; /* Lighter Blue for FAQs */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #0288d1;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #b0bec5; /* Light Gray Border */
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="file"] {
+            padding: 0;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #039be5; /* Lighter Blue for Buttons */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #0288d1; /* Darker Blue on Hover */
+        }
+
+        footer {
+            background-color: #0288d1; /* Match Header */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CleanMyArea - Support</h1>
+    </header>
+
+    <div class="container">
+        <!-- FAQs Section -->
+        <div class="section">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <h3>1. How do I use the CleanMyArea website?</h3>
+                <p>To use the CleanMyArea website, simply register or log in, select the appropriate dustbin category (biodegradable, recyclable, or non-recyclable), and follow the instructions to submit your waste details. You can also explore resources on recycling and waste management in the 'Learn Recycling' section.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. How do I contact customer support?</h3>
+                <p>You can reach out to our support team by filling out the support form below. Alternatively, you can email us at support@cleanmyarea.in or call us at +91-XXXXXXXXXX.</p>
+            </div>
+            <div class="faq-item">
+                <h3>3. What should I do if I encounter a problem with the website?</h3>
+                <p>If you encounter any issues with the website, please describe the problem in detail using the support form below. Our technical team will address your concerns promptly.</p>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>If you need further assistance or have any questions, feel free to contact us using the following methods:</p>
+            <ul>
+                <li><strong>Email:</strong> support@cleanmyarea.in</li>
+                <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+                <li><strong>Address:</strong> 123 Green Lane, Eco City, India</li>
+            </ul>
+        </div>
+
+        <!-- Support Form Section -->
+        <div class="section">
+            <h2>Support Form</h2>
+            <p>If you have a specific issue or need assistance, please fill out the form below, and our support team will get back to you as soon as possible.</p>
+            <form action="submit-support.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="issue">Issue Description:</label>
+                    <textarea id="issue" name="issue" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Support Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CleanMyArea Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

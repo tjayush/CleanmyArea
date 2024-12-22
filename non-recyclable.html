@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dustbin - Non-Recyclable Waste</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fbe9e7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #c62828;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        h1,
+        h2 {
+            color: #c62828;
+            text-align: center;
+        }
+
+        /* Description Section */
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .description img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Item List */
+        .item-list {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .item-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            background-color: #fbe9e7;
+            border-left: 5px solid #c62828;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Form Section */
+        form {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #c62828;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #c62828;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #b71c1c;
+        }
+
+        .note {
+            margin-top: 20px;
+            background-color: #d0f0c0;
+            color: #4caf50;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+        }
+
+        .note img {
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .note p {
+            display: inline-block;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="purchase.html">Purchase</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Description Section -->
+        <div class="description">
+            <img src="pics/red.webp" alt="Red Dustbin">
+            <h1>Red Dustbin</h1>
+            <p>The red dustbin is designated for non-recyclable waste, including medical waste that cannot be processed or recycled. This type of waste needs to be properly disposed of to prevent contamination and environmental harm.</p>
+
+            <h2>What is Medical Waste?</h2>
+            <p>Medical waste includes any waste generated from healthcare activities such as hospitals, clinics, and nursing homes. This waste is often hazardous and needs to be handled with care to avoid any health risks or environmental damage.</p>
+
+            <h2>Categories of Medical Waste:</h2>
+            <ul class="item-list">
+                <li>Infectious Waste: Contaminated with pathogens (e.g., used bandages, gloves).</li>
+                <li>Sharps Waste: Needles, blades, and other sharp objects.</li>
+                <li>Pharmaceutical Waste: Expired or unused medications.</li>
+                <li>Chemical Waste: Hazardous chemicals or reagents.</li>
+                <li>Radioactive Waste: Waste from radiological procedures.</li>
+            </ul>
+
+            <h2>Procedure Before Dumping:</h2>
+            <p>Before dumping medical waste, it must be treated and safely packaged. Hospitals and nursing homes should follow these steps:</p>
+            <ul>
+                <li>Segregate waste into appropriate categories.</li>
+                <li>Use color-coded bins for different types of medical waste.</li>
+                <li>Ensure waste is treated if necessary (e.g., autoclaving).</li>
+                <li>Seal and label containers securely.</li>
+                <li>Arrange for collection by a licensed waste disposal service.</li>
+            </ul>
+        </div>
+
+        <!-- Form Section -->
+        <h2>Submit Your Non-Recyclable Waste Request</h2>
+        <form id="nonRecyclableForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="pin">Pin Code:</label>
+            <input type="text" id="pin" name="pin" required>
+
+            <label for="items">Items:</label>
+            <input type="text" id="items" name="items" required>
+
+            <label for="itemDetails">Item Details (Make, Weight):</label>
+            <textarea id="itemDetails" name="itemDetails" rows="3" required></textarea>
+
+            <label for="weight">Weight of Items (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="note">
+            <img src="pics/red.webp" alt="Check">
+            <p>We have received your request. Our medical waste transfer vehicle will come to collect your waste and ensure proper dumping as soon as possible.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Clean My Area. All rights reserved.</p>
+    </div>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById('nonRecyclableForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.querySelector('.note').style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

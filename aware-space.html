@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awar Space - CleanMyArea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #awar-space {
+            background-color: #f0f8ff;
+            padding: 50px 0;
+        }
+
+        #awar-space .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #awar-space h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .campaigns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .campaign {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .campaign-content {
+            flex: 1;
+        }
+
+        .campaign-content h3 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .campaign-content p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .campaign-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section id="awar-space">
+        <div class="container">
+            <h2>Our Awareness Campaigns</h2>
+            <div class="campaigns">
+                <div class="campaign">
+                    <div class="campaign-content">
+                        <h3>EcoShield Initiative: Protecting Tomorrow, Today</h3>
+                        <p>The EcoShield Initiative is our flagship campaign dedicated to fostering a deep connection between communities and the environment. This campaign goes beyond traditional awareness; it engages participants in hands-on activities such as tree planting, waste reduction challenges, and eco-friendly workshops. By focusing on sustainable practices, the EcoShield Initiative aims to create a ripple effect of positive change, ensuring that each small action contributes to a larger goal of environmental preservation. Participants are encouraged to document their journey and share their experiences, fostering a sense of global community united by a common cause.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/hKFV9IquMXA?si=4wV4KOhI4k8I00iN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="campaign-image">
+                        <img src="pics/campain1.jpeg" alt="EcoShield Campaign Image">
+                    </div>
+                </div>
+                <div class="campaign">
+                    <div class="campaign-content">
+                        <h3>UrbanGreen: Reclaiming Spaces, Restoring Nature</h3>
+                        <p>UrbanGreen is a campaign focused on transforming neglected urban areas into vibrant green spaces. Our mission is to reconnect city dwellers with nature by turning unused lots, rooftops, and public spaces into urban gardens and parks. The campaign promotes biodiversity within the city, offering a haven for wildlife and a retreat for residents. Through partnerships with local businesses, schools, and government bodies, UrbanGreen empowers communities to take charge of their environment, instilling pride and responsibility for their shared spaces. The campaign also includes educational programs on urban agriculture, composting, and sustainable living, ensuring that the green spaces we create are both beautiful and functional for years to come.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/0rDIwRG_RM8?si=LvbZ7dVWyHNVbpI9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="campaign-image">
+                        <img src="pics/campain2.png" alt="UrbanGreen Campaign Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
