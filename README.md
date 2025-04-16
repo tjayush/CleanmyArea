@@ -18,7 +18,7 @@ We not only simplify waste disposal but also offer financial incentives! By sell
 
 ## Key Features
 
-- **AI-powered waste recognition and sorting** (coming soon!)
+- **AI-powered waste recognition and sorting** (coming soon)
 - **Real-time waste collection tracking** 🚛
 - **Partnerships with startups, NGOs, and government bodies** for responsible waste management
 - **Educational content on recycling** through our ‘Learn Recycling’ section 📚
